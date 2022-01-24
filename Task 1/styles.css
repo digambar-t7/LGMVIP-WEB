@@ -6,8 +6,24 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.learn-btn{
+    padding: 14px 25px;
+    border: none;
+    margin: 0 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;}
+ .yellow-btn{
+    background-color: yellow;
+}
+ .purple-btn{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------- */
 nav{
-    background-color: gainsboro;
     width: 50%;
     /* margin: auto; */
     display: flex;
@@ -32,14 +48,23 @@ nav a:hover{
 }
 nav #mainlink{
     font-size: 28px;
+    font-weight: 700;
 }
 #HOME{
-    background: gainsboro;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     height: 88vh;
+}
+#HOME::before{
+    content: '';
+    background: url('./media/john-towner-JgOeRuGD_Y4-unsplash.jpg')no-repeat center center/cover;
+    background-position: inherit;
+    width: 100%;
+    height: 88%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
 }
 #HOME >div{
     height: 100%;
@@ -53,18 +78,58 @@ nav #mainlink{
     font-size: 3rem;
     margin-bottom: 16px;
 }
-#HOME .learnMore button{
-    padding: 14px 25px;
-    border: none;
-    margin: 0 3px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 1rem;
+
+/* WELCOME SECTION */
+#WELCOME{
+    
 }
-#HOME .learnMore .first{
-    background-color: yellow;
+#WELCOME > .container{
+    width: 55%;
+    margin: 24px auto;
+    padding: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
 }
-#HOME .learnMore .second{
-    background-color: rebeccapurple;
-    color: white;
+#WELCOME > .container > h1{
+    margin: 0;
+    font-size: 37px;
+}
+#WELCOME > .container .umbrella{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#WELCOME > .container .umbrella > p{
+    color: grey;
+    font-size: 27px;
+}
+#WELCOME > .container .umbrella > img{
+    width: 28%;
+}
+#WELCOME .container .inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+#WELCOME .container .inner .verticals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#WELCOME .container .inner .verticals > h1{
+}
+#WELCOME .container .inner .verticals > p{
+    padding: 0 15px;
+    text-align: center;
+    color: grey;
+    line-height: 23px;
+    margin: 8px 0;
+}
+#WELCOME .container .inner .verticals > img{
+    width: 65px;
 }
