@@ -34,6 +34,21 @@ body{
 .verticals > img{
     width: 65px;
 }
+.half{
+    flex-basis: 50%;
+}
+.dp{
+    background-color: black;
+    border-radius: 50%;
+    width: 151px;
+    height: 151px;
+}
+.rect{
+    background-color: #62457E;
+    width: 200px;
+    height: 100px;
+    border-radius: 0;
+}
 .learn-btn{
     padding: 14px 25px;
     border: none;
@@ -220,12 +235,6 @@ nav #mainlink{
     align-items: center;
     padding: 28px 0;
 }
-#TEAMS .profile .dp{
-    background-color: black;
-    border-radius: 50%;
-    width: 151px;
-    height: 151px;
-}
 #TEAMS .profile h6{
     font-weight: 800;
     font-size: 12px;
@@ -292,4 +301,40 @@ nav #mainlink{
 }
 #BLOG button:hover{
     background-color: yellow;
+}
+/* CONTACT SECTION */
+#CONTACT{
+    display: flex;
+    background-color: yellow;
+}
+#CONTACT .heading{
+    text-align: left;
+}
+#CONTACT .right{
+    padding: 35px 30px;
+    padding-top: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.entry-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label{
+    padding-bottom: 8px;
+}
+.entry{
+    padding: 8px;
+    margin-bottom: 12px;
+}
+.map{
+    background-color: gainsboro;
+}
+textarea{
+    height: 113px;
 }
