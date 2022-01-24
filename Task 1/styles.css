@@ -13,8 +13,13 @@ body{
     margin: 0 3px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 1rem;}
- .yellow-btn{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.white-btn{
+    background-color: white;
+}
+.yellow-btn{
     background-color: yellow;
 }
  .purple-btn{
@@ -85,8 +90,8 @@ nav #mainlink{
 }
 #WELCOME > .container{
     width: 55%;
-    margin: 24px auto;
-    padding: 23px;
+    margin: auto;
+    padding: 33px 23px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,3 +138,44 @@ nav #mainlink{
 #WELCOME .container .inner .verticals > img{
     width: 65px;
 }
+/* PROJECTS SECTION */
+#PROJECTS {
+    display: flex;
+    flex-direction: column;
+}
+#PROJECTS > h1{
+    font-size: 37px;
+    text-align: center;
+}
+#PROJECTS .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#PROJECTS .container .inner{
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,0.1);
+}
+#PROJECTS .container .inner img{
+    height: 451px;
+}
+#PROJECTS .project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-right: 0.5px solid rgba(0,0,0,0.1);
+}
+#PROJECTS .project-info > h1{
+    margin: 0;
+    font-size: 18px;
+}
+#PROJECTS .project-info > p{
+    color: rgba(0,0,0,0.5);
+    font-size: 13px;
+}
+#PROJECTS .project-btn{
+    width: max-content;
+}
+
