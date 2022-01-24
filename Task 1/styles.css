@@ -6,7 +6,34 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.heading{
+    margin: 0;
+    padding: 33px 0;
+    font-size: 37px;
+    text-align: center;
+}
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.verticals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.verticals > p{
+    padding: 0 15px;
+    text-align: center;
+    color: grey;
+    line-height: 23px;
+    margin: 8px 0;
+}
+.verticals > img{
+    width: 65px;
+}
 .learn-btn{
     padding: 14px 25px;
     border: none;
@@ -85,9 +112,6 @@ nav #mainlink{
 }
 
 /* WELCOME SECTION */
-#WELCOME{
-    
-}
 #WELCOME > .container{
     width: 55%;
     margin: auto;
@@ -98,9 +122,8 @@ nav #mainlink{
     align-items: center;
     border-bottom: 1px solid grey;
 }
-#WELCOME > .container > h1{
-    margin: 0;
-    font-size: 37px;
+#WELCOME .heading{
+    padding: 0;
 }
 #WELCOME > .container .umbrella{
     display: flex;
@@ -111,53 +134,25 @@ nav #mainlink{
     color: grey;
     font-size: 27px;
 }
-#WELCOME > .container .umbrella > img{
+#WELCOME .umbrella > img{
     width: 28%;
-}
-#WELCOME .container .inner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 25px;
-}
-#WELCOME .container .inner .verticals{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#WELCOME .container .inner .verticals > h1{
-}
-#WELCOME .container .inner .verticals > p{
-    padding: 0 15px;
-    text-align: center;
-    color: grey;
-    line-height: 23px;
-    margin: 8px 0;
-}
-#WELCOME .container .inner .verticals > img{
-    width: 65px;
 }
 /* PROJECTS SECTION */
 #PROJECTS {
     display: flex;
     flex-direction: column;
 }
-#PROJECTS > h1{
-    font-size: 37px;
-    text-align: center;
-}
 #PROJECTS .container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#PROJECTS .container .inner{
+#PROJECTS .container .card{
     display: flex;
     flex-direction: column;
     background: rgba(0,0,0,0.1);
 }
-#PROJECTS .container .inner img{
+#PROJECTS .container .card img{
     height: 451px;
 }
 #PROJECTS .project-info{
@@ -178,4 +173,14 @@ nav #mainlink{
 #PROJECTS .project-btn{
     width: max-content;
 }
-
+/* PRICING SECTON */
+#PRICING .business{
+    border-right: 0.5px solid rgba(0,0,0,0.1);
+    border-left: 0.5px solid rgba(0,0,0,0.1);
+}
+#PRICING .verticals{
+    padding: 0 20px;
+}
+#PRICING .verticals h4{
+    margin: 5px 0;
+}
