@@ -1,0 +1,24 @@
+nav{
+    background: rebeccapurple;
+    padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 23px 15px;
+}
+nav li a:hover{
+    border-bottom: 2px solid white;
+}
