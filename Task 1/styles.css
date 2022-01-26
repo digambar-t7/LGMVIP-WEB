@@ -12,6 +12,10 @@ body{
     font-size: 37px;
     text-align: center;
 }
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
 .inner{
     display: flex;
     justify-content: center;
@@ -62,7 +66,11 @@ body{
     background-color: white;
 }
 .yellow-btn{
-    background-color: yellow;
+    background-color: #FEE26D;
+}
+.yellow-btn:hover{
+    background-color: #62457E;
+    color: white;
 }
  .purple-btn{
     background-color: #62457E;
@@ -91,7 +99,7 @@ nav a{
     font-size: 14px;
 }
 nav a:hover{
-    color: yellow;
+    color: #FEE26D;
 }
 nav #mainlink{
     font-size: 28px;
@@ -144,6 +152,7 @@ nav #mainlink{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 21px;
 }
 #WELCOME > .container .umbrella > p{
     color: grey;
@@ -178,7 +187,7 @@ nav #mainlink{
     border-right: 0.5px solid rgba(0,0,0,0.1);
 }
 #PROJECTS .project-info:hover{
-    background-color: yellow;
+    background-color: #FEE26D;
 }
 #PROJECTS .project-info > h1{
     margin: 0;
@@ -222,10 +231,6 @@ nav #mainlink{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-#TEAMS > .container{
-    display: flex;
-    flex-wrap: wrap;
 }
 #TEAMS .profile{
     flex-basis: 33.3333%;
@@ -286,9 +291,6 @@ nav #mainlink{
 #NEWSLETTER button{
     margin: 0;
 }
-#NEWSLETTER button:hover{
-    background-color: #62457E;
-}
 /* BLOG SECTION */
 #BLOG{
     width: 55%;
@@ -300,12 +302,12 @@ nav #mainlink{
     text-align: center;
 }
 #BLOG button:hover{
-    background-color: yellow;
+    background-color: #FEE26D;
 }
 /* CONTACT SECTION */
 #CONTACT{
     display: flex;
-    background-color: yellow;
+    background-color: #FEE26D;
 }
 #CONTACT .heading{
     text-align: left;
@@ -331,10 +333,39 @@ label{
 .entry{
     padding: 8px;
     margin-bottom: 12px;
+    border-radius: 5px;
+    border: none;
 }
 .map{
     background-color: gainsboro;
 }
 textarea{
     height: 113px;
+}
+/* FOOTER */
+footer{
+    width: 55%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 38px;
+}
+footer > div {
+    text-align: center;
+}
+footer .social{
+    margin: 1rem;
+}
+footer .social img{
+    flex-basis: 33.33%;
+    width: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+} 
+footer p{
+    color: dimgray;
+}
+.icons{
+    flex-basis: 33.33%;
 }

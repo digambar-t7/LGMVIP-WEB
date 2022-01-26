@@ -2,8 +2,8 @@ import React from 'react';
 import '../Styles/Card.css'
 
 const Card = (props) => {
-
   const { first_name, last_name, email, avatar } = props.user;
+  console.log("im in card component")
 
   const copyEmail = (e) => {
     navigator.clipboard.writeText(e.innerText)

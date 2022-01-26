@@ -26,15 +26,15 @@ const GetUsers = () => {
 
     useEffect(() => {
         // fetchUsers();
+        setUsers(users)
     }, []);
 
 
     return <main id='container'>
         <h1 className='title'>Fetched User Details!</h1>
         <div className='inner'>
-            {loading ? <Spinner /> : users.map((user) => {
-                // console.log(user.email)
-                < Card key={user.id} user={user} />
+            {loading ? <Spinner /> : users.map((e) => {
+                < Card key={e.id} user={e} />
             })}
 
         </div>
