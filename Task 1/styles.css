@@ -274,26 +274,33 @@ nav #mainlink{
 }
 /* NEWSLETTER SECTION */
 #NEWSLETTER{
-    background-color: #62457E;
+    background-image: url(https://images.pexels.com/photos/4039921/pexels-photo-4039921.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     padding-bottom: 104px;
     padding-top: 31px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 453px;
 }
 #NEWSLETTER .heading{
     color: white;
+    margin-top: 57px;
 }
 #NEWSLETTER .form{
+    margin-top: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #NEWSLETTER .input{
     max-width: 40vw;
-    background: white;
+    background: transparent;
     width: 40vw;
     height: 45px;
     border-radius: 5px;
     padding: 13px 22px;
-    color: dimgrey;
+    color: white;
+    border: 2px solid dimgrey;
 }
 #NEWSLETTER button{
     margin: 0;
