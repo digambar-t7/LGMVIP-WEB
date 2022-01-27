@@ -42,7 +42,9 @@ body{
     flex-basis: 50%;
 }
 .dp{
-    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
     width: 151px;
     height: 151px;
@@ -266,7 +268,6 @@ nav #mainlink{
     background-color: rgba(0,0,0,0.04);
 }
 #LIFE .container{
-    background: black;
     width: 40vw;
     height: 40vh;
     border-radius: 0.5rem;
