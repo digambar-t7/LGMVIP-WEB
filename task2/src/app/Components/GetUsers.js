@@ -5,28 +5,19 @@ import Spinner from './Spinner';
 
 const GetUsers = () => {
 
-    const [users, setUsers] = useState([
-        {
-            "email": "digambartu@gmail.com",
-            "first_name": "digambar",
-            "last_name": "tupurwadi",
-            "id": "1",
-            "avatar": "../digambar.png"
-        }
-    ]);
+    const [users, setUsers] = useState([]);
     const [loading, setLoading] = useState(false);
 
     const fetchUsers = async () => {
         setLoading(true);
-        const response = await fetch();
-        const json = await response.json;
+        const response = await fetch(" https://reqres.in/api/users?page=2");
+        const json = await response.json();
         setUsers(json.data);
         setLoading(false);
     }
 
     useEffect(() => {
-        // fetchUsers();
-        setUsers(users)
+        fetchUsers();
     }, []);
 
 
@@ -34,7 +25,7 @@ const GetUsers = () => {
         <h1 className='title'>Fetched User Details!</h1>
         <div className='inner'>
             {loading ? <Spinner /> : users.map((e) => {
-                < Card key={e.id} user={e} />
+                return < Card key={e.id} user={e} />
             })}
 
         </div>
