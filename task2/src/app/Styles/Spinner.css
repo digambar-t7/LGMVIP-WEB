@@ -1,0 +1,9 @@
+#Spinner img{
+    width: 28rem;
+    margin-top: 1rem;
+}
+#Spinner #loading{
+    font-size: 31px;
+    text-align: center;
+    margin-top: -18px;
+}

@@ -11,3 +11,20 @@
     justify-content: space-evenly;
     align-items: center;
 }
+#container .arrow{
+    background: rebeccapurple;
+    border-radius: 57%;
+    border: none;
+    width: 47px;
+    height: 47px;
+    box-shadow: 0 1px 16px 0 rebeccapurple;
+    position: fixed;
+    cursor: pointer;
+    top: 80%;
+}
+ #left{
+    left: 3%;
+}
+ #right{
+    right: 3%;
+}
