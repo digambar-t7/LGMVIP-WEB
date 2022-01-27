@@ -225,6 +225,12 @@ nav #mainlink{
 #VIDEO .heading{
    color: white;
 }
+#VIDEO .carousel{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+    justify-content: space-evenly;
+}
 /* TEAMS SECTION */
 #TEAMS {
     display: flex;
